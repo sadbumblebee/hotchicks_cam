@@ -1,6 +1,3 @@
+# Hot Chicks, Down to Lay
 
-# static-site
-
-This example uses Metalsmith to make a static site. To test it out yourself just run:
-
-    $ make build
+Work in progress on webcam for my bebe chickens.
