@@ -18,7 +18,7 @@ const layoutsOptions = {
 
 const lessOptions = {
   pattern: ['**/milligram.less']
-}
+};
 
 // #################
 // ###   Build   ###
@@ -35,8 +35,8 @@ Metalsmith(__dirname)
   .clean(false)
   .use(markdown())
   .use(permalinks())
-  .use(layouts({layoutsOptions}))
   .use(less(lessOptions))
+  .use(layouts(layoutsOptions))
   .build(function(err, files) {
     if (err) { throw err; }
   });
