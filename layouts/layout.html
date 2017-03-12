@@ -4,21 +4,22 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/milligram.css">
 </head>
 <body>
-  <header>
-    <p>
-      <a href="/">Home</a>
-    </p>
-  </header>
+<header>
+  <p>
+    <a href="/">Home</a>
+  </p>
+</header>
+<div id="content">
   <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
+  <div id="webcam"></div>
 
   {{{ contents }}}
-
+</div>
   <footer>
     <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
   </footer>

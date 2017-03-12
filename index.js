@@ -6,6 +6,8 @@ const markdown    = require('metalsmith-markdown');
 const layouts     = require('metalsmith-layouts');
 const permalinks  = require('metalsmith-permalinks');
 const less        = require('metalsmith-less');
+const watch       = require('metalsmith-watch');
+const serve       = require('metalsmith-serve');
 
 // #################
 // ###  Options  ###
@@ -37,6 +39,15 @@ Metalsmith(__dirname)
   .use(permalinks())
   .use(less(lessOptions))
   .use(layouts(layoutsOptions))
+  .use(serve())
+  .use(watch({
+    paths: {
+      '${source}/**/*': true,
+      'layouts/**/*': '**/*.md'
+    },
+    livereload: true,
+    })
+  )
   .build(function(err, files) {
     if (err) { throw err; }
   });
