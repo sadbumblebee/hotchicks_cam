@@ -33,7 +33,7 @@ Metalsmith(__dirname)
     url: "http://www.metalsmith.io/"
   })
   .source('./src')
-  .destination('./build')
+  .destination('./docs')
   .clean(false)
   .use(markdown())
   .use(permalinks())
