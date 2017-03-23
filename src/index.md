@@ -2,12 +2,12 @@
 layout: layout.html
 ---
 
-<h2>Read what I have to say</h2>
+## Thanks for Coming!
 
-<a href="/posts/first-post/">First post</a>
+Welcome to our humble webcam.
 
-<a href="/posts/second-post/">Second post</a>
+Allow us to introduce ourselves. We are healthy happy chicks from Oakland. Our names are George, Martha, and Hilda.
 
-<a href="/posts/third-post/">Third post</a>
+We're so happy to have you here. Please come back time and again for updates.
 
-<a href="/posts/fourth-post/">Fourth post</a>
+Have a wonderful rest of your day!

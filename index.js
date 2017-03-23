@@ -28,7 +28,7 @@ const lessOptions = {
 Metalsmith(__dirname)
   .metadata({
     title: "Hot Chicks, Down to Lay",
-    description: "Watch this little chickens run wild.",
+    description: "Watch these little chickens run wild.",
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
